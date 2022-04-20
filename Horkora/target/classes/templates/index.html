@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link th:href="@{/style.css}" rel="stylesheet" />
+
+
+<title>Registration</title>
+
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed"
+     data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+     aria-controls="navbar">
+     <span class="sr-only">Toggle navigation</span> <span
+      class="icon-bar"></span> <span class="icon-bar"></span> <span
+      class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#" th:href="@{/}">Horkora</a>
+   </div>
+   <div id="navbar" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+     <li><a th:href="@{/registration}">Registration</a></li>
+     <li><a th:href="@{/login}">Login</a></li>
+     
+    </ul>
+   </div>
+  </div>
+ </nav>
+
+ <br>
+ <br>
+ <div class="container">
+ 
+ 	<div class="col-md-6 col-md-offset-3">
+
+				<!-- success message -->
+				<div th:if="${param.successReg}">
+					<div class="alert alert-info">You've successfully registered
+						to our awesome app!</div>
+				</div>
+	</div>
+	<br><br>
+	
+	
+	
+	<div class="container">
+		<h1 style = "color:white;margin-left: 23%">Welcome to Horkora</h1>
+	  <h2 class="section-title">services</h2>
+	  <div class="services-inner">
+	
+	    <div class="services-box">
+	      <span class="icon">
+	        <i class="fas fa-desktop"></i>  
+	      </span>
+	      <h3 class="services-title isDisabled"><a th:href="@{/upload}">Verify it</a></h3>
+	    </div>
+	    
+	    <div class="services-box">
+	      <span class="icon">
+	        <i class="fas fa-code"></i>
+	      </span>
+	      <h3 class="services-title isDisabled"><a th:href="@{/upload}">Validate it</a></h3>
+	    </div>
+
+		    
+	    <div class="services-box">
+	      <span class="icon">
+	        <i class="fas fa-paint-brush"></i>
+	      </span>
+	      <h3 class="services-title"><a th:href="@{/upload}">Send Emails</a></h3>
+	    </div>
+	    
+    
+  </div>
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div>
+		
+	</div>
+
+ </div>
+
+
+
+      
+  
+
+</body>
+</html>
